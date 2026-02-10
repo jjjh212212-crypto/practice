@@ -15,5 +15,5 @@ for t in range(1,T+1):
         if len(i) == N and sum(i) == K:
             count+=1
     print(f'#{t} {count}')    
-    
+ 
         

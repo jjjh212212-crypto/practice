@@ -11,9 +11,6 @@ for t in range(1,T+1):
     for i in range(3):
         for j in range(3):
             rec.append(sum([arr[3*i+k][3*j+h] for k in range(3) for h in range(3)]))
-    print(row)
-    print(col)
-    print(rec)
     if row==col==rec==[45]*9:
         print(f'#{t} 1')
     else:

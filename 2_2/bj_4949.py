@@ -8,14 +8,14 @@ while True:
             countrc=0
             countlo=0
             countro=0
-            for j in range(len(lst)):
+            for j in range(i,len(lst)):
                 if lst[j] == '[':
                     countlc+=1
                 elif lst[j] == ']': 
                     countrc+=1
                 if countlc == countrc != 0 and lst[i:j+1].count('(') == lst[i:j+1].count(')'):                        
-                    lst.pop(i)
-                    lst.pop(j)
+                    lst[i]='#'
+                    lst[j]='#'
                     break
 
                 if lst[j] == '(':
@@ -23,9 +23,10 @@ while True:
                 elif lst[j] == ')':
                     countro+=1
                 if countlo == countro != 0 and lst[i:j+1].count('[') == lst[i:j+1].count(']'): 
-                    lst.pop(i)
-                    lst.pop(j)
-                    break   
+                    lst[i]='#'
+                    lst[j]='#'
+                    break
+   
     print(lst) 
     if '[' in lst or ']' in lst or '(' in lst or ')' in lst:
         print('no')

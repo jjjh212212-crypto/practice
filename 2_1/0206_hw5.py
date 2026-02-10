@@ -12,4 +12,4 @@ for t in range(1,T+1):
     for value in dic.values():
         if max < value:
             max=value
-    print(f'#{t} {max}')    
+    print(f'#{t} {max}')

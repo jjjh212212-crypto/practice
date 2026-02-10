@@ -17,7 +17,7 @@ for t in range(1,11):
                 print(f'#{t} 0')
                 break
     if not check:
-        print(f'{t} 1')
+        print(f'#{t} 1')
         
 
 
