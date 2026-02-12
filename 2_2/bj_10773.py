@@ -1,5 +1,4 @@
 n=int(input())
-count=0
 k=[]
 for i in range(n):
     a=int(input())

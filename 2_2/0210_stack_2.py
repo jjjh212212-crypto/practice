@@ -12,7 +12,6 @@ for t in range(1,T+1):
         if key not in edge_dic:
             edge_dic[key]=[]
         edge_dic[key] += [value]
-    print(edge_dic)
     stack=[]
     visit=[]
     while start!=goal:

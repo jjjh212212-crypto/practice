@@ -1,0 +1,30 @@
+import sys
+input = sys.stdin.readline
+n=int(input())
+stack=[]
+for _ in range(n):
+    k=input().strip()
+    if k=='pop':
+        if stack==[]:
+            print(-1)
+        else:
+            print(stack.pop(0))
+    elif k=='size':
+        print(len(stack))
+    elif k=='empty':
+        if not stack:
+            print(1)
+        else:
+            print(0)
+    elif k=='front':
+        if not stack:
+            print(-1)
+        else:
+            print(stack[0])
+    elif k=='back':
+        if not stack:
+            print(-1)
+        else:
+            print(stack[-1])
+    elif k[:4]=='push':
+        stack.append(int(k[5:]))

@@ -1,7 +1,9 @@
+import sys
+input = sys.stdin.readline
 n=int(input())
 stack=[]
 for _ in range(n):
-    k=input()
+    k=input().strip()
     if k=='pop':
         if stack==[]:
             print(-1)

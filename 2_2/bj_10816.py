@@ -1,13 +1,16 @@
+import sys
+input = sys.stdin.readline
+
 N=int(input())
 lstN=list(map(int,input().split()))
 M=int(input())
 lstM=list(map(int,input().split()))
 result={}
 for i in lstN:
-    if i in lstM:
-        if i not in result:
-            result[i] = 0
+    if i in result:
         result[i]+=1
+    else:
+        result[i]=1
 for i in lstM:
     if i in result:
         print(result[i], end=' ')
