@@ -26,3 +26,6 @@ for t in range(1,T+1):
     lst=list(map(int,input().split()))
     quick_sort(0,len(lst) - 1)
     print(f'#{t} {lst[N//2]}')
+
+
+    

@@ -6,13 +6,9 @@ def com(num,start):
             result+=1
         return
     for i in range(start,12):
-        # if used[i] == True:
-        #     continue
-        # used[i]=True
         path.append(i+1)
         com(num+1,i+1)
         path.pop()
-        # used[i]=False
 T=int(input())
 for t in range(1,T+1):
     N,K=map(int,input().split())

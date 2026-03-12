@@ -10,17 +10,17 @@ def two(lstA,i):
             bools=False
             break
         if i > lstA[m]:
-            l=m+1
             if a==1:
                 bools=False
                 break
+            l=m+1
             a=1
             b=0
         elif i < lstA[m]:
-            r=m-1
             if b==1:
                 bools=False
                 break
+            r=m-1
             b=1
             a=0
         m=(l+r)//2
@@ -32,6 +32,7 @@ for t in range(1,T+1):
     lstA=list(map(int,input().split()))
     lstB=list(map(int,input().split()))
     count=0
+    lstA.sort()
     for i in lstB:
         if two(lstA,i):
             count+=1
