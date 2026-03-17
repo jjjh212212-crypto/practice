@@ -9,4 +9,4 @@ while n >= c:
     count+=com(n,c)*2**c
     n-=1
     c+=1
-print(count)
+print(count%10007)
